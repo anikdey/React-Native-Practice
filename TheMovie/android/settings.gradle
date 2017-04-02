@@ -1,0 +1,18 @@
+rootProject.name = 'TheMovie'
+include ':react-native-android-video-player'
+project(':react-native-android-video-player').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-video-player/android')
+
+
+include ':react-native-splashscreen'
+project(':react-native-splashscreen').projectDir = new File(settingsDir, '../node_modules/@remobile/react-native-splashscreen/android')
+
+include ':react-native-native-video-player'
+project(':react-native-native-video-player').projectDir = new File(settingsDir, '../node_modules/react-native-native-video-player/android')
+
+include ':react-native-video'
+project(':react-native-video').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-video/android')
+
+
+include ':app'
+
+
